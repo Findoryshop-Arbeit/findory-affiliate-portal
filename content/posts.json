@@ -1,0 +1,25 @@
+[
+  {
+    "slug": "wenn-ein-alltagsproblem-sich-staendig-wiederholt",
+    "title": "Wenn ein Alltagsproblem sich ständig wiederholt",
+    "excerpt": "Warum gute Lösungen mit einer genauen Problembeschreibung beginnen – und wie du aus einem Ärgernis einen klaren nächsten Schritt machst.",
+    "category": "alltag-leichter-machen",
+    "tags": ["Probleme verstehen", "Lösungswege", "Alltag"],
+    "status": "published",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "author": "Findory Redaktion",
+    "readingTime": "4 Min.",
+    "cover": null,
+    "comments": "moderated",
+    "body": [
+      { "type": "paragraph", "text": "Ein Problem wird nicht dadurch kleiner, dass man sich an es gewöhnt. Oft wird es aber erst lösbar, wenn man es so beschreibt, dass die Ursache nicht mit dem Symptom verwechselt wird." },
+      { "type": "heading", "text": "Vom Ärgernis zur konkreten Frage" },
+      { "type": "paragraph", "text": "Statt nur festzuhalten, dass etwas nervt, lohnt sich eine kurze Bestandsaufnahme: Wann tritt es auf? Wen betrifft es? Was wurde bereits versucht? Und woran würde man merken, dass eine Lösung wirklich hilft?" },
+      { "type": "list", "items": ["Situation und Auslöser notieren", "bereits getestete Wege festhalten", "ein realistisches Ziel definieren", "Lösungen nach Aufwand, Nutzen und Nebenwirkungen vergleichen"] },
+      { "type": "heading", "text": "Eine Lösung muss zum Alltag passen" },
+      { "type": "paragraph", "text": "Die beste Lösung auf dem Papier ist nicht automatisch die beste Lösung für den eigenen Alltag. Findory ordnet deshalb Problem, Hinweise und Lösungswege zuerst ein. Produkte kommen erst danach als mögliche Werkzeuge infrage." },
+      { "type": "paragraph", "text": "Wenn ein Thema später nicht mehr aktuell ist, verschwindet es nicht einfach: Die Problemseite bleibt im Archiv auffindbar und kann weiterhin als Ausgangspunkt für eine passende Lösung dienen." }
+    ]
+  }
+]
