@@ -1,6 +1,14 @@
 const params = new URLSearchParams(window.location.search);
 const slug = params.get('slug');
 
+function isArchived(item) {
+  return item.visibility === 'archived' || item.status === 'archived';
+}
+
+function isHidden(item) {
+  return item.visibility === 'hidden' || item.status === 'hidden';
+}
+
 function renderProblemCard(card) {
   const article = document.createElement('article');
   article.className = 'problem-card';
@@ -45,7 +53,14 @@ async function initCategoryPage() {
     document.title = 'Findory – ' + category.title;
     document.getElementById('category-description').textContent = category.description;
     const cards = document.getElementById('category-cards');
-    problems.filter((item) => item.category === category.slug).forEach((card) => cards.append(renderProblemCard(card)));
+    const activeCards = problems.filter((item) => item.category === category.slug && !isArchived(item) && !isHidden(item));
+    activeCards.forEach((card) => cards.append(renderProblemCard(card)));
+    if (!activeCards.length) {
+      const empty = document.createElement('p');
+      empty.className = 'category-empty';
+      empty.textContent = 'Aktuell sind hier keine aktiven Problemseiten veröffentlicht.';
+      cards.append(empty);
+    }
   } catch (error) {
     console.error('Findory category page could not be loaded.', error);
     title.textContent = 'Kategorie nicht gefunden';
