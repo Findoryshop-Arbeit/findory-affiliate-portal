@@ -26,11 +26,20 @@ function renderCards(query = '') {
         const article = document.createElement('article');
         article.className = 'problem-card';
 
-        const image = document.createElement('div');
-        image.className = 'problem-image';
-        image.setAttribute('role', 'img');
-        image.setAttribute('aria-label', 'Bild folgt nach externer Erstellung');
-        image.textContent = 'Bild folgt';
+        if (card.asset) {
+          const image = document.createElement('img');
+          image.className = 'problem-image';
+          image.src = card.asset;
+          image.alt = card.title;
+          article.append(image);
+        } else {
+          const image = document.createElement('div');
+          image.className = 'problem-image';
+          image.setAttribute('role', 'img');
+          image.setAttribute('aria-label', 'Bild folgt nach externer Erstellung');
+          image.textContent = 'Bild folgt';
+          article.append(image);
+        }
 
         const title = document.createElement('h3');
         title.textContent = card.title;
@@ -38,10 +47,10 @@ function renderCards(query = '') {
         summary.textContent = card.summary;
         const link = document.createElement('a');
         link.className = 'card-link';
-        link.href = '#' + card.slug;
-        link.textContent = 'Zur Übersicht →';
+        link.href = 'problem.html?slug=' + encodeURIComponent(card.slug);
+        link.textContent = 'Zur Problemseite →';
 
-        article.append(image, title, summary, link);
+        article.append(title, summary, link);
         root.append(article);
       });
   });
