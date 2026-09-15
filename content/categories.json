@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "wohnen-sparen",
+    "title": "Wohnen & Sparen",
+    "description": "Praktische Ideen für Räume, Energie und ein Budget, das nicht ständig beleidigt ist.",
+    "tone": "mint",
+    "icon": "⌂",
+    "order": 1,
+    "status": "mvp"
+  },
+  {
+    "slug": "sicherheit-vorsorge",
+    "title": "Sicherheit & Vorsorge",
+    "description": "Lösungen, die Risiken kleiner machen und den Kopf nachts etwas weniger ratlos lassen.",
+    "tone": "blue",
+    "icon": "✦",
+    "order": 2,
+    "status": "mvp"
+  },
+  {
+    "slug": "gesund-arbeiten-leben",
+    "title": "Gesund arbeiten & leben",
+    "description": "Alltagstaugliche Verbesserungen für Körper, Fokus und die vielen kleinen Belastungen dazwischen.",
+    "tone": "yellow",
+    "icon": "☼",
+    "order": 3,
+    "status": "mvp"
+  },
+  {
+    "slug": "alltag-leichter-machen",
+    "title": "Alltag leichter machen",
+    "description": "Durchdachte Helfer für Wege, Routinen und Aufgaben, die wirklich niemand vermisst hat.",
+    "tone": "coral",
+    "icon": "↗",
+    "order": 4,
+    "status": "mvp"
+  }
+]
