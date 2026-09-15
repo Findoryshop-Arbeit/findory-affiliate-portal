@@ -17,24 +17,33 @@ Die Landingpage folgt der freigegebenen Referenz: ruhiger weißer Header, wohnli
 - Gesund arbeiten & leben
 - Alltag leichter machen
 
-## Geplanter Aufbau
+## Aktueller MVP
 
-`src/` enthält Seiten, Komponenten, Daten, Styles und Automatisierung.
+- Responsive statische Landingpage mit Hero, Suche, vier Themenbereichen, Vertrauensleiste und Footer.
+- Kategorien und 16 Problemkarten liegen als JSON unter content/.
+- app.js lädt diese Inhalte datengetrieben und filtert sie lokal über die Suche.
+- Bildbereiche sind bis zur externen Erstellung bewusst Platzhalter.
+- Asset-Anforderungen und Benennungsregeln stehen in docs/ASSETS_NEEDED.md.
 
-`content/` enthält Kategorien, Problemseiten, Ratgeber und Angebote als strukturierte Daten.
+## Struktur
 
-`public/` enthält nur tatsächlich benötigte Web-Assets.
+- index.html – semantische Landingpage-Struktur
+- styles.css – responsives visuelles System
+- app.js – Inhaltsladung und Suche
+- content/ – strukturierte Kategorien und Problemkarten
+- docs/ – technische Hinweise, offene Assets und Prüfhinweise
+- public/ – reserviert für geprüfte Web-Assets
 
-`docs/` enthält technische Entscheidungen und Prüfhinweise.
-
-## Arbeitsregeln
+## Regeln
 
 - Erst Problem und Evidenz, dann Lösung und Affiliate-Angebot.
-- Keine erfundenen Tests, Preise, Bewertungen oder Erfahrungen.
+- Keine erfundenen Tests, Preise, Bewertungen oder persönlichen Erfahrungen.
 - Affiliate-Hinweise unmittelbar bei relevanten Links.
 - Keine Secrets, Tokens oder Zugangsdaten im Repository.
 - Cloudflare-Deployment erst nach funktionierendem Build, End-to-End-Prüfung und Readback.
 
-## Status
+## Noch offen
 
-Projektgrundlage angelegt. Website-Implementierung folgt schrittweise im neuen Repository. Das bestehende Findory-Shop-Projekt bleibt davon getrennt und unverändert.
+Echte Bildassets mit Lizenznachweis, fünf priorisierte Problemseiten, rechtssichere Stammdaten für Impressum/Datenschutz/Kontakt und eine lokale End-to-End-Prüfung vor jeder Veröffentlichung.
+
+Das bestehende Findory-Shop-Projekt bleibt getrennt und unverändert.
