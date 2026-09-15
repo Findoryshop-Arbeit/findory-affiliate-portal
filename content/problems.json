@@ -1,0 +1,162 @@
+[
+  {
+    "slug": "stromkosten-senken",
+    "category": "wohnen-sparen",
+    "title": "Stromkosten senken",
+    "problem": "Die Rechnung steigt, obwohl niemand gefühlt mehr verbraucht.",
+    "summary": "Messbare Hebel für Geräte, Standby und Verbrauch.",
+    "tags": ["Energie", "Haushalt"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "kleine-raeume-besser-nutzen",
+    "category": "wohnen-sparen",
+    "title": "Kleine Räume besser nutzen",
+    "problem": "Jeder Quadratmeter ist belegt, aber nichts ist dort, wo man es braucht.",
+    "summary": "Stauraum- und Ordnungsansätze ohne Wohnungsumbau.",
+    "tags": ["Ordnung", "Wohnen"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "luftfeuchtigkeit-im-blick",
+    "category": "wohnen-sparen",
+    "title": "Luftfeuchtigkeit im Blick",
+    "problem": "Zu trocken, zu feucht oder einfach dauerhaft fragwürdig.",
+    "summary": "Einfache Mess- und Lüftungsroutinen für ein besseres Raumklima.",
+    "tags": ["Raumklima", "Gesundheit"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "haushalt-ohne-wegwerfkaeufe",
+    "category": "wohnen-sparen",
+    "title": "Haushalt ohne Wegwerfkäufe",
+    "problem": "Billig gekauft, zweimal benutzt, danach Schubladenarchäologie.",
+    "summary": "Kriterien für langlebige und wirklich passende Haushaltshelfer.",
+    "tags": ["Budget", "Langlebigkeit"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "einbruchschutz-fuer-mietwohnungen",
+    "category": "sicherheit-vorsorge",
+    "title": "Einbruchschutz für Mietwohnungen",
+    "problem": "Mehr Sicherheit wäre gut, Bohren und Ärger mit dem Vermieter eher nicht.",
+    "summary": "Nachrüstbare Maßnahmen mit klaren Grenzen und Prüfpunkten.",
+    "tags": ["Sicherheit", "Miete"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "wichtige-dokumente-ordnen",
+    "category": "sicherheit-vorsorge",
+    "title": "Wichtige Dokumente ordnen",
+    "problem": "Im Notfall fehlt genau das Papier, das angeblich sicher abgeheftet war.",
+    "summary": "Eine robuste Struktur für Unterlagen, Fristen und Kopien.",
+    "tags": ["Organisation", "Vorsorge"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "notfallset-zuhause",
+    "category": "sicherheit-vorsorge",
+    "title": "Notfallset für zuhause",
+    "problem": "Wenn etwas ausfällt, beginnt die Suche nach Taschenlampenbatterien.",
+    "summary": "Sinnvolle Grundausstattung statt Prepper-Theater.",
+    "tags": ["Notfall", "Haushalt"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "passwoerter-sicher-verwalten",
+    "category": "sicherheit-vorsorge",
+    "title": "Passwörter sicher verwalten",
+    "problem": "Zu viele Konten, zu wenig Gedächtnis und bitte kein Zettel unter der Tastatur.",
+    "summary": "Praktische Grundsätze für Passwortmanager und Wiederherstellung.",
+    "tags": ["Digital", "Sicherheit"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "ergonomischer-arbeitsplatz",
+    "category": "gesund-arbeiten-leben",
+    "title": "Ergonomischer Arbeitsplatz",
+    "problem": "Der Rücken meldet sich früher als der Feierabend.",
+    "summary": "Einstellbare Basics für Sitzposition, Bildschirm und Bewegung.",
+    "tags": ["Ergonomie", "Homeoffice"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "augen-entlasten",
+    "category": "gesund-arbeiten-leben",
+    "title": "Augen beim Bildschirm entlasten",
+    "problem": "Trockene Augen sind offenbar der neue Bürostandard.",
+    "summary": "Beleuchtung, Abstand und Pausen sinnvoll kombinieren.",
+    "tags": ["Bildschirm", "Arbeitsplatz"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "besser-schlafen-trotz-stress",
+    "category": "gesund-arbeiten-leben",
+    "title": "Besser schlafen trotz Stress",
+    "problem": "Der Körper ist müde, der Kopf hält noch eine Konferenz ab.",
+    "summary": "Routinen und Hilfsmittel für eine ruhigere Abendkante.",
+    "tags": ["Schlaf", "Routine"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "bewegung-im-bueroalltag",
+    "category": "gesund-arbeiten-leben",
+    "title": "Bewegung im Büroalltag",
+    "problem": "Acht Stunden Sitzen werden nicht durch den Gang zur Kaffeemaschine geheilt.",
+    "summary": "Kleine, realistische Bewegungsanker für Arbeitstage.",
+    "tags": ["Bewegung", "Arbeitsalltag"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "kabelchaos-beenden",
+    "category": "alltag-leichter-machen",
+    "title": "Kabelchaos beenden",
+    "problem": "Das richtige Kabel liegt immer ganz unten oder gehört zu etwas anderem.",
+    "summary": "Ordnungssysteme, die auch nach drei Tagen noch funktionieren.",
+    "tags": ["Ordnung", "Technik"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "einkauf-besser-planen",
+    "category": "alltag-leichter-machen",
+    "title": "Einkäufe besser planen",
+    "problem": "Der Einkaufszettel ist da, nur die Hälfte davon offenbar nicht.",
+    "summary": "Listen, Vorräte und Erinnerungen ohne komplizierte Produktivitätsreligion.",
+    "tags": ["Planung", "Haushalt"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "unterwegs-besser-organisiert",
+    "category": "alltag-leichter-machen",
+    "title": "Unterwegs besser organisiert",
+    "problem": "Schlüssel, Ladegerät und Kopfhörer führen täglich ein eigenes Fluchtspiel.",
+    "summary": "Kompakte Routinen und Taschenlösungen für unterwegs.",
+    "tags": ["Unterwegs", "Routine"],
+    "asset": null,
+    "status": "content-needed"
+  },
+  {
+    "slug": "zeit-fuer-kleine-aufgaben",
+    "category": "alltag-leichter-machen",
+    "title": "Zeit für kleine Aufgaben",
+    "problem": "Fünf-Minuten-Aufgaben sammeln sich zu einem Nebenjob.",
+    "summary": "Sichtbare Ablagen und einfache Abläufe gegen Kleinkramstau.",
+    "tags": ["Zeit", "Organisation"],
+    "asset": null,
+    "status": "content-needed"
+  }
+]
