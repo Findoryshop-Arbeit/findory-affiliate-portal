@@ -33,7 +33,9 @@ Deno.serve(async (request: Request) => {
     auth: { autoRefreshToken: false, persistSession: false }
   });
   const { data: { user }, error: userError } = await userClient.auth.getUser();
-  if (userError || !user) return json(request, { error: "authentication_required" }, 401);
+  if (userError || !user || !user.email || !user.email_confirmed_at) {
+    return json(request, { error: "verified_email_required" }, 403);
+  }
 
   let payload: Record<string, unknown>;
   try {
@@ -49,7 +51,12 @@ Deno.serve(async (request: Request) => {
   const postSlug = typeof payload.postSlug === "string" ? payload.postSlug.trim() : "";
   const authorName = typeof payload.authorName === "string" ? payload.authorName.trim() : "";
   const body = typeof payload.body === "string" ? payload.body.trim() : "";
+  const submittedEmail = typeof payload.email === "string" ? payload.email.trim().toLowerCase() : "";
+  const accountEmail = user.email.trim().toLowerCase();
 
+  if (!submittedEmail || submittedEmail !== accountEmail || submittedEmail.length > 254) {
+    return json(request, { error: "email_required" }, 400);
+  }
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(postSlug) || postSlug.length > 160) {
     return json(request, { error: "invalid_post" }, 400);
   }
