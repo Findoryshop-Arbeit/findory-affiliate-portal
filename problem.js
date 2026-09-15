@@ -27,6 +27,7 @@ async function initProblemPage() {
       const image = document.createElement('img');
       image.src = problem.asset;
       image.alt = problem.title;
+      image.className = 'detail-image';
       imageContainer.replaceWith(image);
     }
 
