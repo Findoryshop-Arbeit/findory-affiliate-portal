@@ -1,4 +1,92 @@
-const topics = { wohnen: [{title:'Heizkosten senken',text:'Effektiv sparen mit den richtigen Lösungen.'},{title:'Schimmel vermeiden',text:'Gesünder leben mit dem richtigen Raumklima.'},{title:'Besseres Raumklima',text:'Für ein angenehmes Zuhause zu jeder Jahreszeit.'},{title:'Kühl durch den Sommer',text:'Praktische Lösungen gegen Hitze in Wohnräumen.'}], sicherheit: [{title:'Stromausfall-Vorsorge',text:'Wichtige Produkte für den Ernstfall.'},{title:'Digitale Sicherheit',text:'Schütze deine Daten und deine Privatsphäre.'},{title:'Notfallausrüstung',text:'Sinnvolle Helfer für mehr Sicherheit im Alltag.'},{title:'Zuhause sicherer machen',text:'Einfache Maßnahmen mit großer Wirkung.'}], gesundheit: [{title:'Ergonomisch arbeiten',text:'Rückenfreundliche Lösungen für Homeoffice und Büro.'},{title:'Besser schlafen',text:'Für mehr Erholung und neue Energie.'},{title:'Mehr Wohlbefinden',text:'Praktische Produkte für einen aktiveren Alltag.'},{title:'Gesünder leben',text:'Kleine Veränderungen mit großer Wirkung.'}], alltag: [{title:'Lebensmittel clever nutzen',text:'Weniger verschwenden. Mehr sparen.'},{title:'Besser im Alter leben',text:'Sicher und selbstständig zuhause.'},{title:'Mobilität & unterwegs',text:'Praktische Lösungen für Auto, Fahrrad und Reisen.'},{title:'Haushalt erleichtern',text:'Clevere Produkte für mehr Zeit im Leben.'}]};
-const slugify = (value) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/&/g,'und').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-function renderCards(query=''){ const term=query.trim().toLowerCase(); let matches=0; Object.entries(topics).forEach(([key,cards])=>{ const root=document.getElementById(key); if(!root)return; root.innerHTML=''; cards.filter(card=>!term||card.title.toLowerCase().includes(term)||card.text.toLowerCase().includes(term)).forEach(card=>{matches++; const article=document.createElement('article'); article.className='problem-card'; article.innerHTML='<div class="problem-image" role="img" aria-label="Bild folgt nach externer Erstellung">Bild folgt</div><h3></h3><p></p><a class="card-link" href="#'+slugify(card.title)+'">Zur Übersicht →</a>'; article.querySelector('h3').textContent=card.title; article.querySelector('p').textContent=card.text; root.append(article);}); }); let notice=document.querySelector('.search-message'); if(term&&!notice){ notice=document.createElement('p'); notice.className='search-message'; document.getElementById('themen').prepend(notice); } if(notice){notice.textContent=term ? (matches ? matches+' passende Themen gefunden.' : 'Keine passenden Themen gefunden.') : ''; notice.hidden=!term;} }
-const forms=[document.getElementById('search-form')]; forms.forEach(form=>form?.addEventListener('submit',(event)=>{event.preventDefault(); const value=document.getElementById('hero-search').value; document.getElementById('header-search').value=value; renderCards(value); document.getElementById('themen').scrollIntoView({behavior:'smooth'});})); document.getElementById('header-search')?.addEventListener('input',(event)=>renderCards(event.target.value)); renderCards();
+const categoryRoots = {
+  'wohnen-sparen': 'wohnen',
+  'sicherheit-vorsorge': 'sicherheit',
+  'gesund-arbeiten-leben': 'gesundheit',
+  'alltag-leichter-machen': 'alltag'
+};
+let categories = [];
+let problems = [];
+
+function renderCards(query = '') {
+  const term = query.trim().toLowerCase();
+  let matches = 0;
+
+  categories.slice().sort((a, b) => a.order - b.order).forEach((category) => {
+    const root = document.getElementById(categoryRoots[category.slug]);
+    if (!root) return;
+    root.innerHTML = '';
+
+    problems
+      .filter((card) => {
+        const haystack = [card.title, card.problem, card.summary, ...(card.tags || [])].join(' ').toLowerCase();
+        return card.category === category.slug && (!term || haystack.includes(term));
+      })
+      .forEach((card) => {
+        matches += 1;
+        const article = document.createElement('article');
+        article.className = 'problem-card';
+
+        const image = document.createElement('div');
+        image.className = 'problem-image';
+        image.setAttribute('role', 'img');
+        image.setAttribute('aria-label', 'Bild folgt nach externer Erstellung');
+        image.textContent = 'Bild folgt';
+
+        const title = document.createElement('h3');
+        title.textContent = card.title;
+        const summary = document.createElement('p');
+        summary.textContent = card.summary;
+        const link = document.createElement('a');
+        link.className = 'card-link';
+        link.href = '#' + card.slug;
+        link.textContent = 'Zur Übersicht →';
+
+        article.append(image, title, summary, link);
+        root.append(article);
+      });
+  });
+
+  let notice = document.querySelector('.search-message');
+  if (term && !notice) {
+    notice = document.createElement('p');
+    notice.className = 'search-message';
+    notice.setAttribute('role', 'status');
+    document.getElementById('themen').prepend(notice);
+  }
+  if (notice) {
+    notice.textContent = term ? (matches ? matches + ' passende Themen gefunden.' : 'Keine passenden Themen gefunden.') : '';
+    notice.hidden = !term;
+  }
+}
+
+function bindSearch() {
+  document.getElementById('search-form')?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const value = document.getElementById('hero-search').value;
+    document.getElementById('header-search').value = value;
+    renderCards(value);
+    document.getElementById('themen').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.getElementById('header-search')?.addEventListener('input', (event) => renderCards(event.target.value));
+}
+
+async function loadContent() {
+  try {
+    const [categoryResponse, problemResponse] = await Promise.all([
+      fetch('content/categories.json'),
+      fetch('content/problems.json')
+    ]);
+    if (!categoryResponse.ok || !problemResponse.ok) throw new Error('Content files unavailable');
+    [categories, problems] = await Promise.all([categoryResponse.json(), problemResponse.json()]);
+    renderCards();
+  } catch (error) {
+    console.error('Findory content could not be loaded.', error);
+    const notice = document.createElement('p');
+    notice.className = 'search-message';
+    notice.textContent = 'Die Inhaltsdaten konnten noch nicht geladen werden.';
+    document.getElementById('themen')?.prepend(notice);
+  }
+}
+
+bindSearch();
+loadContent();
