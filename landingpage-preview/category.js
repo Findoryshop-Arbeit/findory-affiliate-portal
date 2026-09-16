@@ -1,13 +1,14 @@
 (() => {
-  const params = new URLSearchParams(location.search);
-  const topics = window.FINDORY_TOPICS || [];
-  const topic = topics.find((entry) => entry.id === params.get('thema'));
-  const headline = document.querySelector('#category-view'); const list = document.querySelector('#subtopic-list'); const productArea = document.querySelector('#product-area');
-  const slug = (value) => value.toLowerCase().replace(/[^a-z0-9äöüß]+/gi, '-').replace(/^-|-$/g, '');
+  const params = new URLSearchParams(location.search); const topic = (window.FINDORY_TOPICS || []).find((entry) => entry.id === params.get('thema')); const guides = window.FINDORY_GUIDES || [];
+  const headline = document.querySelector('#category-view'); const list = document.querySelector('#subtopic-list'); const contentArea = document.querySelector('#content-area');
   if (!topic) { headline.innerHTML = '<h1>Themenwelt nicht gefunden</h1><p>Bitte wähle eine Themenwelt auf der Startseite.</p>'; return; }
-  const selectedSlug = params.get('unterthema'); const selected = topic.items.find((item) => slug(item[0]) === selectedSlug);
-  document.title = `Findory – ${selected ? selected[0] : topic.title}`;
-  headline.innerHTML = `<p class="eyebrow">${topic.title}</p><h1>${selected ? selected[0] : topic.title}</h1><p>${selected ? selected[1] + ' Hier sammeln wir später geprüfte Lösungswege und passende Produktempfehlungen.' : topic.intro + ' Wähle ein Unterthema für den nächsten Schritt.'}</p>`;
-  if (selected) productArea.innerHTML = `<div class="product-head"><p>Passende Lösungen</p><h2>Produktempfehlungen folgen nach Recherche</h2><span>Hier erscheinen später ausgewählte Produkte mit Preisstand, Einordnung und deinem Affiliate-Link.</span></div><div class="product-grid"><article><div class="product-image">Bild folgt</div><h3>Produktplatz 1</h3><p>Geeignete Lösung wird recherchiert und geprüft.</p></article><article><div class="product-image">Bild folgt</div><h3>Produktplatz 2</h3><p>Geeignete Alternative wird ergänzt.</p></article><article><div class="product-image">Bild folgt</div><h3>Produktplatz 3</h3><p>Weitere passende Option wird ergänzt.</p></article></div>`;
-  list.innerHTML = topic.items.map((item) => `<a class="detail-link${selected && item[0] === selected[0] ? ' selected' : ''}" href="category.html?thema=${encodeURIComponent(topic.id)}&unterthema=${encodeURIComponent(slug(item[0]))}"><h2>${item[0]}</h2><p>${item[1]}</p><span>${selected ? 'Dieses Thema öffnen →' : 'Zur Detailseite →'}</span></a>`).join('');
+  const selected = topic.items.find((item) => item.id === params.get('unterthema')); const selectedArea = selected?.subtopics.find((area) => area.id === params.get('bereich'));
+  const link = (item, area) => `category.html?thema=${encodeURIComponent(topic.id)}&unterthema=${encodeURIComponent(item.id)}${area ? `&bereich=${encodeURIComponent(area.id)}` : ''}`;
+  const areaCard = (item, area) => `<a class="detail-link" href="${link(item, area)}"><p class="detail-parent">${item.title}</p><h2>${area.title}</h2><p>${area.intro}</p><span>Bereich öffnen →</span></a>`;
+  document.title = `Findory – ${selectedArea?.title || selected?.title || topic.title}`;
+  if (!selected) { headline.innerHTML = `<p class="eyebrow">${topic.title}</p><h1>Alle Lösungsbereiche</h1><p>${topic.intro} Wähle ein konkretes Anliegen, damit du gezielt zu passenden Ratgebern und späteren Produktempfehlungen gelangst.</p>`; contentArea.innerHTML = '<div class="section-intro"><h2>Womit möchtest du anfangen?</h2><p>Jeder Bereich führt zu einer eigenen, später erweiterbaren Themenstruktur.</p></div>'; list.innerHTML = topic.items.flatMap((item) => item.subtopics.map((area) => areaCard(item, area))).join(''); return; }
+  headline.innerHTML = `<p class="eyebrow">${topic.title}</p><h1>${selectedArea?.title || selected.title}</h1><p>${selectedArea?.intro || selected.intro} Hier entstehen Schritt für Schritt hilfreiche Ratgeber, Vergleiche und erst nach Prüfung konkrete Produktempfehlungen.</p>`;
+  const related = guides.filter((guide) => guide.topicId === topic.id && guide.itemId === selected.id);
+  contentArea.innerHTML = related.length ? `<section class="guide-callout"><div><p>Ratgeber & Vergleiche</p><h2>Orientierung vor Produktempfehlungen.</h2><span>Wir zeigen Kriterien, Stärken und Grenzen verschiedener Produkttypen – ohne vorgetäuschte Tests oder Affiliate-Links.</span></div><a href="ratgeber-beitrag.html?guide=${encodeURIComponent(related[0].id)}">Vergleich lesen →</a></section>` : '<div class="section-intro"><h2>Dieser Bereich wird vorbereitet.</h2><p>Die Struktur steht. Ein fundierter Ratgeber folgt, sobald das Thema recherchiert ist.</p></div>';
+  list.innerHTML = selected.subtopics.map((area) => areaCard(selected, area)).join('');
 })();
