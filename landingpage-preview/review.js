@@ -93,7 +93,7 @@
       event.preventDefault();
       const email = new FormData(event.currentTarget).get('email').trim().toLowerCase();
       status('Anmeldelink wird gesendet …');
-      try { await requestMagicLink(email); status('Bitte öffne den Link aus deinem E-Mail-Postfach.'); }
+      try { await requestMagicLink(email); status('Bitte öffne den neuesten Link direkt aus deinem E-Mail-Postfach.'); }
       catch (error) { status(error.message, true); }
     });
   }
