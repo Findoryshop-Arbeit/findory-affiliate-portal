@@ -2,6 +2,7 @@ window.FINDORY_PRODUCTS = [
   {
     asin: 'B0CNQZXNMG',
     guideId: 'heizkoerperthermostate-vergleichen',
+    category: 'manual',
     title: 'VANCOCO Thermostatkopf M30 × 1,5',
     meta: 'VANCOCO · Weiß · mechanischer Thermostatkopf',
     description: 'Ein mechanischer Thermostatkopf für Heizkörperventile mit M30 × 1,5-Gewinde. Die auf Amazon.de gewählte Variante ist weiß und als Einzelstück geführt.',
@@ -13,6 +14,7 @@ window.FINDORY_PRODUCTS = [
   {
     asin: 'B00HNSXHSO',
     guideId: 'heizkoerperthermostate-vergleichen',
+    category: 'manual',
     title: 'Honeywell Home Thera 200 Design T4111',
     meta: 'Honeywell Home · Modell T4111 · gebürstet/silber',
     description: 'Der Thera 200 Design ist ein mechanischer Thermostatkopf von Honeywell Home. Für die geprüfte Amazon.de-Variante nennt die Seite die Ausführung „Gebürstet“ in Silber.',
@@ -24,6 +26,7 @@ window.FINDORY_PRODUCTS = [
   {
     asin: 'B092924ZRH',
     guideId: 'heizkoerperthermostate-vergleichen',
+    category: 'manual',
     title: 'Danfoss React RA Click 015G3090',
     meta: 'Danfoss · Modell React RA Click · 015G3090',
     description: 'Dieser Thermostatkopf ist der Danfoss React RA Click mit der Modellnummer 015G3090. Er ist kein Danfoss RA 2990 und sollte deshalb nur für das passende RA-Click-Ventil ausgewählt werden.',
@@ -35,6 +38,7 @@ window.FINDORY_PRODUCTS = [
   {
     asin: 'B004VEPLDM',
     guideId: 'heizkoerperthermostate-vergleichen',
+    category: 'manual',
     title: 'Oventrop Uni LV 1616001',
     meta: 'Oventrop · Uni LV · Weiß · Vaillant-Klemmverbindung',
     description: 'Der Oventrop Uni LV ist ein weißer Thermostatkopf mit Flüssig-Fühler für Vaillant-Klemmverbindungen. Die Amazon.de-Seite führt ihn unter der Artikel- und Modellnummer 1616001.',
@@ -46,6 +50,7 @@ window.FINDORY_PRODUCTS = [
   {
     asin: 'B07PZWPHW1',
     guideId: 'heizkoerperthermostate-vergleichen',
+    category: 'manual',
     title: 'Honeywell Home Thera-5 T5019',
     meta: 'Honeywell Home · Modell Thera-5 / T5019 · Weiß',
     description: 'Ein weißer, mechanischer Heizkörperthermostatkopf der Reihe Honeywell Home Thera-5. Die geprüfte Amazon.de-Seite nennt den M30 × 1,5-Standardanschluss und führt im Lieferumfang ein T5019.',
