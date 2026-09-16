@@ -23,8 +23,8 @@
   const productSection = products.length ? `<section class="product-area" aria-labelledby="product-heading"><div class="product-head"><p>Geprüfte Produkte</p><h2 id="product-heading">Konkrete Thermostatköpfe im Überblick</h2></div>${categories.map((category) => { const categoryProducts = products.filter((product) => product.category === category.id); return `<section class="product-category" id="category-${category.id}" aria-labelledby="category-${category.id}-heading"><h3 id="category-${category.id}-heading"><span class="category-pill">${category.label}</span></h3>${categoryProducts.length ? `<div class="product-grid">${categoryProducts.map(productCard).join('')}</div>` : `<p class="product-empty">${category.empty}</p>`}</section>`; }).join('')}</section>` : '';
   const comparisonVisuals = guide.id === 'heizkoerperthermostate-vergleichen' ? {
     'Manuelles Thermostat': { src: 'assets/ventil.jpeg', alt: 'Manueller Heizkörperthermostatkopf an einem Heizkörperventil' },
-    'Programmierbares Thermostat': { placeholder: 'Bildplatzhalter für ein programmierbares Thermostat' },
-    'Smartes Thermostat': { placeholder: 'Bildplatzhalter für ein smartes Thermostat' }
+    'Programmierbares Thermostat': { src: 'assets/thermostat-programmierbar.jpeg', alt: 'Programmierbarer Heizkörperthermostatkopf mit Display an einem Heizkörper' },
+    'Smartes Thermostat': { src: 'assets/thermostat-smart.jpeg', alt: 'Smarter Heizkörperthermostatkopf mit digitaler Temperaturanzeige' }
   } : {};
   const comparisonVisual = (item) => {
     const visual = comparisonVisuals[item.name];
