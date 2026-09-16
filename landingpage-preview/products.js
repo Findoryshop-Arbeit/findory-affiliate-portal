@@ -67,5 +67,5 @@ const thermostatGuide = (window.FINDORY_GUIDES || []).find(
 
 if (thermostatGuide) {
   thermostatGuide.comparison.conclusion =
-    'Die Produktkarten unten zeigen fünf geprüfte mechanische Thermostatköpfe. Prüfe vor dem Kauf immer den vorhandenen Ventilanschluss.';
+    'Die Produktkarten unten zeigen die am bestbewertetsten Thermostatköpfe ihrer Kategorie.';
 }
