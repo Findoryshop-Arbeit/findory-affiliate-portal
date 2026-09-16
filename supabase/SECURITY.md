@@ -1,6 +1,6 @@
 # Findory – Sicherheitsbaseline
 
-Stand: 15.09.2026
+Stand: 16.09.2026
 
 ## Supabase
 
@@ -23,6 +23,14 @@ Der Client verwendet ausschließlich den öffentlichen Supabase-Schlüssel. Der 
 ## CORS und Veröffentlichung
 
 Die Funktion antwortet nur dann browserseitig mit einer Origin-Freigabe, wenn die Umgebungsvariable `FINDORY_ALLOWED_ORIGIN` exakt auf die spätere Findory-Domain gesetzt ist. Bis zur Konfiguration von Auth, Domain und CORS bleibt die öffentliche Kommentarabgabe deaktiviert.
+
+## Privater Review-Modus
+
+- Die Tabelle `public.review_notes` hat aktiviertes RLS, eine explizite Verweigerungs-Policy und keine direkten Rechte für anonyme oder angemeldete Browser.
+- Nur die Edge Function `findory-admin` kann nach erfolgreicher JWT-Prüfung und exaktem Abgleich mit der Projektverwaltungs-E-Mail Review-Hinweise lesen, schreiben oder auf erledigt setzen.
+- CORS dieser Funktion ist auf `https://findoryshop-arbeit.github.io` begrenzt; andere Browser-Origin erhalten keine Freigabe.
+- Der Review-Schalter erscheint nur mit `?review=1`; das ist kein Sicherheitsmechanismus, sondern hält die Redaktionsoberfläche aus der normalen Besucheransicht heraus. Die eigentliche Zugriffskontrolle liegt serverseitig.
+- Vor dem produktiven E-Mail-Login muss die exakte GitHub-Pages-Adresse in Supabase als erlaubte Auth-Redirect-URL hinterlegt werden.
 
 ## Offene Sicherheitsaufgabe
 
