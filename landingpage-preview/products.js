@@ -258,6 +258,76 @@ window.FINDORY_PRODUCTS = [
     suitableFor: 'Alle, die deutlichere Spalten abdichten möchten und dafür ein stärkeres Dichtungsprofil benötigen.',
     assessment: 'Besonders sinnvoll bei größeren Spalten, bei denen dünne Dichtungsbänder kaum noch Wirkung zeigen.',
     affiliateUrl: 'https://www.amazon.de/dp/B08W22WLFN?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B08W22WLFN&asc_item-id=amzn1.ideas.RHOEJWWFBV8E&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B076ZNNDVN',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'tuerbodendichtungen',
+    title: 'EXTSUD Türdichtung',
+    imageSrc: 'assets/extsud-tuerdichtung.jpg',
+    imageAlt: 'EXTSUD selbstklebende Türdichtung gegen Zugluft',
+    description: 'Die EXTSUD Türdichtung ist eine selbstklebende Lösung für den unteren Bereich von Türen. Sie wird direkt an der Tür befestigt und soll verhindern, dass kalte Luft durch den Spalt zwischen Tür und Boden in den Raum gelangt. Die Dichtung eignet sich besonders für Wohnungstüren, Zimmertüren oder andere Türen mit einem sichtbaren Spalt im unteren Bereich.',
+    pros: ['Selbstklebend.', 'Einfache Montage.', 'Kein Werkzeug erforderlich.', 'Für verschiedene Türarten geeignet.', 'Hilft gegen Zugluft.', 'Kann zusätzlich Staub und Geräusche reduzieren.', 'Vergleichsweise günstige Lösung.'],
+    cons: ['Klebefläche muss sauber und trocken sein.', 'Bei sehr großen Spalten möglicherweise nicht ausreichend.', 'Kann auf unebenen Böden stärker schleifen.', 'Richtige Höhe muss bei der Montage beachtet werden.'],
+    suitableFor: 'Alle, die einen normalen Spalt unter einer Tür schnell und unkompliziert abdichten möchten.',
+    assessment: 'Eine einfache und preiswerte Standardlösung für typische Türspalten, ohne große Umbauten oder Werkzeug.',
+    affiliateUrl: 'https://www.amazon.de/dp/B076ZNNDVN?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B076ZNNDVN&asc_item-id=amzn1.ideas.16K2DV3BB12C4&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B0BLWJ1ND6',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'tuerbodendichtungen',
+    title: 'Dpm Tapes Silikon-Zugluftdichtung',
+    imageSrc: 'assets/dpm-tapes-tuerdichtung.jpg',
+    imageAlt: 'Dpm Tapes selbstklebende Silikon-Zugluftdichtung für Türen',
+    description: 'Die Dpm Tapes Zugluftdichtung besteht aus flexiblem Silikon und wird mit einem selbstklebenden Streifen direkt an der Tür befestigt. Durch das weiche Material kann sich die Dichtung an unterschiedliche Bodenhöhen anpassen und den unteren Türspalt verschließen. Sie eignet sich besonders für Bereiche, bei denen starre Dichtungen schnell schleifen oder nicht sauber anliegen.',
+    pros: ['Flexibles Silikon.', 'Selbstklebend.', 'Anpassungsfähig bei unterschiedlichen Bodenhöhen.', 'Einfache Montage.', 'Hilft gegen Zugluft und Staub.', 'Kann auch Geräusche etwas reduzieren.', 'Unauffällige Bauform.'],
+    cons: ['Silikon kann bei starker Belastung schneller verschleißen.', 'Klebestreifen benötigt einen sauberen Untergrund.', 'Bei sehr großen Türspalten nicht immer ausreichend.', 'Muss exakt auf die richtige Höhe geklebt werden.'],
+    suitableFor: 'Alle, die eine flexible Türabdichtung suchen oder einen leicht unebenen Boden haben.',
+    assessment: 'Eine gute Alternative zu starren Türbodendichtungen, wenn etwas mehr Flexibilität gefragt ist.',
+    affiliateUrl: 'https://www.amazon.de/dp/B0BLWJ1ND6?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B0BLWJ1ND6&asc_item-id=amzn1.ideas.16K2DV3BB12C4&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B0BKK82B73',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'tuerbodendichtungen',
+    title: 'DOMAR Zugluftstopper Tür',
+    imageSrc: 'assets/domar-tuerdichtung.jpg',
+    imageAlt: 'DOMAR selbstklebender Zugluftstopper an einer Tür',
+    description: 'Der DOMAR Zugluftstopper ist eine selbstklebende Türbodendichtung für Türen mit einem deutlich sichtbaren Spalt zum Boden. Die Dichtung wird an der Tür befestigt und soll verhindern, dass kalte Luft unter der Tür hindurchzieht. Das Profil ist auf eine möglichst einfache Montage ausgelegt und kann passend auf die benötigte Türbreite zugeschnitten werden.',
+    pros: ['Selbstklebend.', 'Zuschneidbar.', 'Für viele Türbreiten geeignet.', 'Hilft gegen Zugluft.', 'Einfache Montage.', 'Keine Bohrungen notwendig.', 'Kann auch Staub reduzieren.'],
+    cons: ['Muss sauber zugeschnitten werden.', 'Klebekraft hängt stark vom Untergrund ab.', 'Bei sehr unebenen Böden möglicherweise weniger geeignet.', 'Kann bei zu niedriger Montage auf dem Boden schleifen.'],
+    suitableFor: 'Alle, die eine klassische Türbodendichtung für normale bis etwas größere Türspalten suchen.',
+    assessment: 'Eine solide Allround-Lösung für typische Türen und ein guter Mittelweg zwischen einfacher Montage und wirksamer Abdichtung.',
+    affiliateUrl: 'https://www.amazon.de/dp/B0BKK82B73?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B0BKK82B73&asc_item-id=amzn1.ideas.16K2DV3BB12C4&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B0CZS7HCTC',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'tuerbodendichtungen',
+    title: 'LIEBHEIM Türdichtung Unten',
+    imageSrc: 'assets/liebheim-tuerdichtung.jpg',
+    imageAlt: 'LIEBHEIM Premium-Türdichtung für den unteren Türbereich',
+    description: 'Die LIEBHEIM Türdichtung ist eine hochwertige Türbodendichtung für Türen mit einem spürbaren Spalt zum Boden. Sie soll Zugluft zuverlässig reduzieren und gleichzeitig möglichst sauber und unauffällig an der Tür sitzen. Die Dichtung lässt sich auf die passende Breite zuschneiden und eignet sich für verschiedene Türarten.',
+    pros: ['Solide Verarbeitung.', 'Selbstklebend.', 'Zuschneidbar.', 'Für viele Türarten geeignet.', 'Hilft effektiv gegen Zugluft.', 'Unauffälliges Design.', 'Kann zusätzlich Geräusche und Staub reduzieren.'],
+    cons: ['Etwas teurer als einfache Dichtungen.', 'Exakte Montage wichtig.', 'Bei stark unebenen Böden eventuell weniger geeignet.', 'Klebefläche muss gründlich vorbereitet werden.'],
+    suitableFor: 'Alle, die eine etwas hochwertigere Türbodendichtung suchen und Wert auf eine saubere Optik legen.',
+    assessment: 'Eine gute Wahl für Nutzer, die nicht nur die günstigste Lösung möchten, sondern eine etwas hochwertigere Abdichtung bevorzugen.',
+    affiliateUrl: 'https://www.amazon.de/dp/B0CZS7HCTC?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B0CZS7HCTC&asc_item-id=amzn1.ideas.16K2DV3BB12C4&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B08XWFQ1RL',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'tuerbodendichtungen',
+    title: 'Vellure Premium Türdichtung',
+    imageSrc: 'assets/vellure-tuerdichtung.jpg',
+    imageAlt: 'Vellure Premium-Türdichtung als Zugluftstopper unter einer Tür',
+    description: 'Die Vellure Premium Türdichtung ist eine selbstklebende Türbodendichtung, die Zugluft unter Türen reduzieren soll. Das Produkt ist für verschiedene Türarten gedacht und lässt sich ohne Bohren oder Schrauben montieren. Durch das flexible Profil kann die Dichtung kleinere Unterschiede zwischen Tür und Boden ausgleichen.',
+    pros: ['Selbstklebend.', 'Einfache Montage.', 'Kein Bohren notwendig.', 'Flexibles Dichtungsprofil.', 'Für verschiedene Türen geeignet.', 'Hilft gegen Zugluft und Staub.', 'Viele Kundenbewertungen.', 'Unauffällige Optik.'],
+    cons: ['Richtige Positionierung ist wichtig.', 'Klebefläche muss sauber und trocken sein.', 'Bei sehr großen Spalten nicht ausreichend.', 'Kann auf sehr unebenen Böden schleifen.'],
+    suitableFor: 'Alle, die eine bewährte und häufig gekaufte Türbodendichtung mit einfacher Montage suchen.',
+    assessment: 'Eine praktische und unkomplizierte Lösung für typische Türspalten und besonders interessant für Käufer, die sich an vielen vorhandenen Bewertungen orientieren möchten.',
+    affiliateUrl: 'https://www.amazon.de/dp/B08XWFQ1RL?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B08XWFQ1RL&asc_item-id=amzn1.ideas.16K2DV3BB12C4&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
   }
 ];
 
