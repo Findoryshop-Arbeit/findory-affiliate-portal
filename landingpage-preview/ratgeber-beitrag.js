@@ -28,7 +28,8 @@
     'Smartes Thermostat': { src: 'assets/thermostat-smart.jpeg', alt: 'Smarter Heizkörperthermostatkopf mit digitaler Temperaturanzeige' }
   } : guide.id === 'zugluft-stoppen-vergleichen' ? {
     'Fensterdichtungen': { src: 'assets/dichtband.jpeg', alt: 'Selbstklebendes Dichtungsband zum Abdichten von Fenstern' },
-    'Türbodendichtung': { src: 'assets/tuerbodendichtung.jpeg', alt: 'Türbodendichtung an einer Tür gegen Zugluft' }
+    'Türbodendichtung': { src: 'assets/tuerbodendichtung.jpeg', alt: 'Türbodendichtung an einer Tür gegen Zugluft' },
+    'Zugluftstopper': { src: 'assets/zugluftstopper.jpeg', alt: 'Textiler Zugluftstopper vor einer Tür' }
   } : {};
   const comparisonVisual = (item) => {
     const visual = comparisonVisuals[item.name];
