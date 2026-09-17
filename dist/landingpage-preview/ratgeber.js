@@ -1,0 +1,1 @@
+(() => { const list = document.querySelector('#guide-list'); const guides = window.FINDORY_GUIDES || []; list.innerHTML = guides.map((guide) => `<article class="guide-card"><p>${guide.readTime}</p><h2>${guide.title}</h2><p>${guide.intro}</p><a href="ratgeber-beitrag.html?guide=${encodeURIComponent(guide.id)}">Vergleich öffnen →</a></article>`).join(''); })();
