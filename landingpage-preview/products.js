@@ -198,6 +198,76 @@ window.FINDORY_PRODUCTS = [
     suitableFor: 'Alle, die bereits eine passende FRITZ!Box nutzen und ihre Heizkörper ohne zusätzliche Smart-Home-Zentrale per App steuern möchten.',
     assessment: 'Besonders interessant für FRITZ!Box-Nutzer, weil das vorhandene Heimnetz direkt genutzt werden kann.',
     affiliateUrl: 'https://www.amazon.de/dp/B09TKZRJ6H?tag=onamzklausube-21'
+  },
+  {
+    asin: 'B0BJFBD372',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'fenster-abdichten',
+    title: 'Lumonic 10 m EPDM Dichtungsband',
+    description: 'Das Lumonic Dichtungsband besteht aus selbstklebendem EPDM-Zellkautschuk und eignet sich zum Abdichten von Fenstern und Türen. Je nach gewählter Stärke kann es kleine bis größere Spalten ausgleichen und so Zugluft und Kälte reduzieren. Das Band wird auf eine saubere, trockene Fläche geklebt und benötigt kein zusätzliches Werkzeug.',
+    imageSrc: 'https://m.media-amazon.com/images/I/3194GWeSLjL._AC_.jpg',
+    imageAlt: 'Lumonic EPDM-Dichtungsband für Fenster und Türen',
+    pros: ['Selbstklebend.', 'EPDM-Zellkautschuk.', 'Für Fenster und Türen geeignet.', 'Hilft gegen Zugluft und Kälte.', 'Verschiedene Breiten und Stärken verfügbar.', 'Auch für den Außenbereich geeignet.', 'Vergleichsweise günstige Lösung.'],
+    cons: ['Die richtige Stärke muss vorher gewählt werden.', 'Die Klebefläche muss sauber und trocken sein.', 'Bei stark verzogenen Fenstern reicht ein Dichtungsband oft nicht aus.', 'Optisch eher funktional.'],
+    suitableFor: 'Alle, die Fenster oder Türen mit einfachen Mitteln gegen kleinere bis mittlere Spalten abdichten möchten.',
+    assessment: 'Eine flexible und preiswerte Lösung, besonders wenn unterschiedliche Spaltgrößen abgedichtet werden sollen.',
+    affiliateUrl: 'https://www.amazon.de/dp/B0BJFBD372?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B0BJFBD372&asc_item-id=amzn1.ideas.RHOEJWWFBV8E&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B09P3GJG1M',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'fenster-abdichten',
+    title: 'NATUCE 12 m selbstklebendes Dichtungsband',
+    description: 'Das NATUCE Dichtungsband ist eine einfache selbstklebende Lösung zum Abdichten kleiner Spalten an Fenstern und Türen. Durch die geringe Materialstärke eignet es sich besonders für Bereiche, bei denen dickere Dichtungsprofile verhindern würden, dass Fenster oder Türen sauber schließen. Das Band kann passend zugeschnitten und direkt auf den gereinigten Rahmen geklebt werden.',
+    imageSrc: 'https://m.media-amazon.com/images/I/413+jlMaRfL._AC_.jpg',
+    imageAlt: 'NATUCE selbstklebendes Dichtungsband für kleine Spalten',
+    pros: ['12 Meter Gesamtlänge.', 'Selbstklebend.', 'Einfach zuschneidbar.', 'Besonders für kleine Spalten geeignet.', 'Unauffälliger als dicke Dichtungsprofile.', 'Günstige Möglichkeit zur Zugluftreduzierung.'],
+    cons: ['Für größere Spalten zu dünn.', 'Der Untergrund muss gründlich gereinigt werden.', 'Weniger Polsterung als dickere Schaumstoffprofile.', 'Bei stark undichten Fenstern nicht ausreichend.'],
+    suitableFor: 'Alle, die nur schmale Spalten an Fenster- oder Türrahmen abdichten möchten.',
+    assessment: 'Sinnvoll für kleine Undichtigkeiten, bei denen dickere Dichtungen bereits zu viel wären.',
+    affiliateUrl: 'https://www.amazon.de/dp/B09P3GJG1M?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B09P3GJG1M&asc_item-id=amzn1.ideas.RHOEJWWFBV8E&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B0060V9FP4',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'fenster-abdichten',
+    title: 'tesa INSULATION Dichtungsband Premium, 6 m',
+    description: 'Das tesa INSULATION Dichtungsband Premium ist eine hochwertigere Lösung zum Abdichten von Fenstern und Türen. Das flexible Dichtungsprofil passt sich unterschiedlichen Spaltbreiten an und soll Zugluft reduzieren, ohne dass Fenster oder Türen umgebaut werden müssen. Die selbstklebende Rückseite ermöglicht eine einfache Montage.',
+    imageSrc: 'https://m.media-amazon.com/images/I/41RAMHsSKrL._AC_.jpg',
+    imageAlt: 'tesa INSULATION Dichtungsband Premium für Fenster und Türen',
+    pros: ['Hochwertiges Markenprodukt.', 'Selbstklebend.', 'Flexibles Dichtungsprofil.', 'Für unterschiedliche Spaltbreiten geeignet.', 'Für Fenster und Türen verwendbar.', 'Unauffällige Lösung.', 'Vergleichsweise langlebig.'],
+    cons: ['Teurer als einfache Schaumstoffbänder.', 'Die richtige Montage ist wichtig.', 'Der Untergrund muss sauber und trocken sein.', 'Bei beschädigten Rahmen keine dauerhafte Lösung.'],
+    suitableFor: 'Alle, die eine langlebigere und flexiblere Dichtung suchen und nicht nur die günstigste Variante verwenden möchten.',
+    assessment: 'Die hochwertigere Wahl für Nutzer, die eine sauberere und dauerhaft wirkende Lösung bevorzugen.',
+    affiliateUrl: 'https://www.amazon.de/dp/B0060V9FP4?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B0060V9FP4&asc_item-id=amzn1.ideas.RHOEJWWFBV8E&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B0BCDPHR1S',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'fenster-abdichten',
+    title: 'tesa INSULATION Dichtungsband S, 2er-Pack',
+    description: 'Das tesa INSULATION Dichtungsband S ist für kleinere Spalten an Fenstern und Türen gedacht. Durch das schmalere Profil eignet es sich besonders für Fensterrahmen, bei denen nur leichte Undichtigkeiten vorhanden sind. Der 2er-Pack bietet ausreichend Material, um mehrere Fenster oder verschiedene Problemstellen abzudichten.',
+    imageSrc: 'https://m.media-amazon.com/images/I/416qRNhzpTL._AC_.jpg',
+    imageAlt: 'tesa INSULATION Dichtungsband S im 2er-Pack',
+    pros: ['Zwei Rollen im Set.', 'Selbstklebend.', 'Für kleinere Spalten geeignet.', 'Einfach zuzuschneiden.', 'Gut für mehrere Fenster nutzbar.', 'Bewährtes Markenprodukt.', 'Einfache Montage.'],
+    cons: ['Nicht für große Spalten geeignet.', 'Weniger flexibel als stärkere Profile.', 'Die Klebefläche muss gut vorbereitet werden.', 'Für stark verzogene Rahmen ungeeignet.'],
+    suitableFor: 'Alle, die mehrere Fenster mit kleineren Undichtigkeiten abdichten möchten.',
+    assessment: 'Praktisch, wenn gleich mehrere Fenster leicht ziehen und ein dünneres Profil ausreicht.',
+    affiliateUrl: 'https://www.amazon.de/dp/B0BCDPHR1S?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B0BCDPHR1S&asc_item-id=amzn1.ideas.RHOEJWWFBV8E&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
+  },
+  {
+    asin: 'B08W22WLFN',
+    guideId: 'zugluft-stoppen-vergleichen',
+    category: 'fenster-abdichten',
+    title: 'Yotache selbstklebendes Dichtungsband',
+    description: 'Das Yotache Dichtungsband ist eine stärkere selbstklebende Gummidichtung für Fenster und Türen. Das kräftigere Profil eignet sich vor allem für deutlichere Spalten. Das Material kann neben Zugluft auch Feuchtigkeit und Geräusche reduzieren.',
+    imageSrc: 'https://m.media-amazon.com/images/I/51zxbf37koL._AC_.jpg',
+    imageAlt: 'Yotache selbstklebendes Dichtungsband für größere Spalten',
+    pros: ['Selbstklebend.', 'Relativ dickes Dichtungsprofil.', 'Für Fenster und Türen geeignet.', 'Hilft gegen Zugluft.', 'Wasserabweisend.', 'Kann zusätzlich Geräusche dämpfen.', 'Zwei Rollen im Set.'],
+    cons: ['Für sehr kleine Spalten zu dick.', 'Fenster oder Türen könnten bei falscher Auswahl schlechter schließen.', 'Die Klebefläche muss sauber sein.', 'Optisch auffälliger als dünne Profile.'],
+    suitableFor: 'Alle, die deutlichere Spalten abdichten möchten und dafür ein stärkeres Dichtungsprofil benötigen.',
+    assessment: 'Besonders sinnvoll bei größeren Spalten, bei denen dünne Dichtungsbänder kaum noch Wirkung zeigen.',
+    affiliateUrl: 'https://www.amazon.de/dp/B08W22WLFN?linkCode=ssc&tag=klausuberfuhr-21&creativeASIN=B08W22WLFN&asc_item-id=amzn1.ideas.RHOEJWWFBV8E&ref_=aip_sf_list_spv_ofs_mixed_d_asin'
   }
 ];
 
