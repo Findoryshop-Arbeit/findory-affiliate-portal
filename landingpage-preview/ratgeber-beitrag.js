@@ -26,6 +26,8 @@
     'Manuelles Thermostat': { src: 'assets/ventil.jpeg', alt: 'Manueller Heizkörperthermostatkopf an einem Heizkörperventil' },
     'Programmierbares Thermostat': { src: 'assets/thermostat-programmierbar.jpeg', alt: 'Programmierbarer Heizkörperthermostatkopf mit Display an einem Heizkörper' },
     'Smartes Thermostat': { src: 'assets/thermostat-smart.jpeg', alt: 'Smarter Heizkörperthermostatkopf mit digitaler Temperaturanzeige' }
+  } : guide.id === 'zugluft-stoppen-vergleichen' ? {
+    'Fensterdichtungen': { src: 'assets/dichtband.jpeg', alt: 'Selbstklebendes Dichtungsband zum Abdichten von Fenstern' }
   } : {};
   const comparisonVisual = (item) => {
     const visual = comparisonVisuals[item.name];
