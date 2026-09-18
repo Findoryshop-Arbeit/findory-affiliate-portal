@@ -11,6 +11,9 @@
   }
 
   document.title = `Findory – ${guide.title}`;
+  if (guide.id === 'zugluft-stoppen-vergleichen') {
+    guide.productConclusion = 'Die beste Lösung hängt von der undichten Stelle, der Spaltgröße und der gewünschten Montage ab. Für eine dauerhaft befestigte und eher unauffällige Lösung ist die Vellure Türdichtung naheliegend; die shinfly Silikon-Dichtung passt besser, wenn eine dünne und flexible Bauform wichtig ist. Wer nicht kleben oder bohren möchte, findet mit BKSAI eine reversible Lösung, die besonders für Mietwohnungen interessant ist. Die com-four-Doppeldichtung ist praktisch, wenn beide Seiten der Tür abgedichtet oder gleich zwei Türen ausgestattet werden sollen, kann aber sichtbarer sein und passt nicht zu jeder Tür-Boden-Kombination. Der Praknu-Zugluftstopper ist die klassische Wahl für eine schwere, waschbare Stoffrolle ohne feste Montage, benötigt aber mehr Platz und muss passend positioniert werden. Entscheidend ist: erst den Eintritt der kalten Luft prüfen, dann den Spalt messen und die Tür nach der Montage auf leichtes Schließen testen. Bei sehr großen Spalten, beschädigten Rahmen oder Zugluft aus Rollladenkästen reicht ein Zugluftstopper allein möglicherweise nicht.';
+  }
   const comparison = guide.comparison;
   const legacyProducts = (window.FINDORY_PRODUCTS || []).filter((product) => product.guideId === guide.id);
   let products = legacyProducts;
