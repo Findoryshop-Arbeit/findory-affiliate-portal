@@ -3,7 +3,7 @@
   const headline = document.querySelector('#category-view'); const list = document.querySelector('#subtopic-list'); const contentArea = document.querySelector('#content-area');
   if (!topic) { headline.innerHTML = '<h1>Themenwelt nicht gefunden</h1><p>Bitte wähle eine Themenwelt auf der Startseite.</p>'; return; }
   const link = (item, area) => `category.html?thema=${encodeURIComponent(topic.id)}&unterthema=${encodeURIComponent(item.id)}${area ? `&bereich=${encodeURIComponent(area.id)}` : ''}`;
-  const guideLink = (item, area) => guides.find((guide) => guide.topicId === topic.id && guide.itemId === item.id && guide.areaId === area.id);
+  const guideLink = (item, area) => guides.find((guide) => guide.topicId === topic.id && guide.itemId === item.id && (guide.areaId === area.id || guide.areaIds?.includes(area.id))) || (area.guideId ? guides.find((guide) => guide.id === area.guideId) : null);
   const areaHref = (item, area) => { const guide = guideLink(item, area); return guide ? `ratgeber-beitrag.html?guide=${encodeURIComponent(guide.id)}` : link(item, area); };
   const areaCard = (item, area) => { const guide = guideLink(item, area); return `<a class="detail-link" href="${areaHref(item, area)}"><p class="detail-parent">${item.title}</p><h2>${area.title}</h2><p>${area.intro}</p><span>${guide ? 'Angebote ansehen →' : 'Bereich öffnen →'}</span></a>`; };
   const selected = topic.items.find((item) => item.id === params.get('unterthema')); const selectedArea = selected?.subtopics.find((area) => area.id === params.get('bereich')); const selectedAreaGuide = selected && selectedArea ? guideLink(selected, selectedArea) : null;
