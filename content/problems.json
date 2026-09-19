@@ -47,7 +47,7 @@
     "summary": "Nachrüstbare Maßnahmen mit klaren Grenzen und Prüfpunkten.",
     "tags": ["Sicherheit", "Miete"],
     "asset": null,
-    "status": "content-needed"
+    "status": "ready"
   },
   {
     "slug": "wichtige-dokumente-ordnen",
@@ -57,7 +57,7 @@
     "summary": "Eine robuste Struktur für Unterlagen, Fristen und Kopien.",
     "tags": ["Organisation", "Vorsorge"],
     "asset": null,
-    "status": "content-needed"
+    "status": "ready"
   },
   {
     "slug": "notfallset-zuhause",
@@ -67,7 +67,7 @@
     "summary": "Sinnvolle Grundausstattung statt Prepper-Theater.",
     "tags": ["Notfall", "Haushalt"],
     "asset": null,
-    "status": "content-needed"
+    "status": "ready"
   },
   {
     "slug": "passwoerter-sicher-verwalten",
@@ -77,7 +77,7 @@
     "summary": "Praktische Grundsätze für Passwortmanager und Wiederherstellung.",
     "tags": ["Digital", "Sicherheit"],
     "asset": null,
-    "status": "content-needed"
+    "status": "ready"
   },
   {
     "slug": "ergonomischer-arbeitsplatz",
